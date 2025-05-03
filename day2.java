@@ -110,28 +110,71 @@
 
 
 
-import java.util.Scanner;
-public class day2 {
-    public static void main(String[] args) {
+// import java.util.Scanner;
+// public class day2 {
+//     public static void main(String[] args) {
      
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter Amount Of Purchase");
+//         double x=sc.nextInt();
+//         if(x>0 && x<1000){
+//             System.out.println("5% Discount");
+//             System.out.println("Amount to Pay "+(x-(x*5/100)));
+//         }
+//         else if(x>1000 && x<5000){
+//             System.out.println("10% Discount");
+//             System.out.println("Amount to Pay "+(x-(x*10/100)));
+//         }
+//         else if(x>5000 && x<10000){
+//             System.out.println("15% Discount");
+//             System.out.println("Amount to Pay "+(x-(x*15/100)));
+//         }
+//         else if(x>10000){
+//             System.out.println("20% Discount");
+//             System.out.println("Amount to Pay "+(x-(x*20/100)));
+//         } 
+//     }
+// }
+
+// import java.util.Scanner;
+// public class day2{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter Day");
+//         int x=sc.nextInt();
+//         switch (x) {
+//             case 0:
+//                 System.out.println("Sunday");
+//                 break;
+//                 case 1:
+//                 System.out.println("Monday");
+//                 break;
+//                 case 2:
+//                 System.out.println("Tuesday");
+//                 break;
+//                 case 3:
+//                 System.out.println("Wednesday");
+//                 break;
+//                 case 4:
+//                 System.out.println("Thursday");
+//                 break;
+//                 case 5:
+//                 System.out.println("Friday");
+//                 break;
+//                 case 6:
+//                 System.out.println("Saturday");
+//                 break;
+//         }
+//     }
+// }
+
+
+import java.util.Scanner;
+public class day2{
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Amount Of Purchase");
-        double x=sc.nextInt();
-        if(x>0 && x<1000){
-            System.out.println("5% Discount");
-            System.out.println("Amount to Pay "+(x-(x*5/100)));
-        }
-        else if(x>1000 && x<5000){
-            System.out.println("10% Discount");
-            System.out.println("Amount to Pay "+(x-(x*10/100)));
-        }
-        else if(x>5000 && x<10000){
-            System.out.println("15% Discount");
-            System.out.println("Amount to Pay "+(x-(x*15/100)));
-        }
-        else if(x>10000){
-            System.out.println("20% Discount");
-            System.out.println("Amount to Pay "+(x-(x*20/100)));
-        } 
+        int x=sc.nextInt();
+        String s=(x%2==0)?"even":"odd";
+        System.out.println(s);
     }
 }

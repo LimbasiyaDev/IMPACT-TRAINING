@@ -59,6 +59,7 @@ public class day1{
         else{
             System.out.println("Consonent");
         }
+        
     }   
     }
 

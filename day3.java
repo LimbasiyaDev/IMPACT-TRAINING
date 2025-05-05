@@ -89,19 +89,39 @@
 //     }
 // }
 
+// import java.util.Scanner;
+
+// public class day3{
+//     public static void main(String[] args) {
+//     Scanner sc = new Scanner(System.in);
+//     int n = sc.nextInt();
+//         for(int i=1;i<=n;i++)
+//         {
+//         for(int j=1;j<=i;j++)
+//         {
+//         System.out.print(j);
+//         }
+//         System.out.println();
+//     }
+//     }
+// }
+
+
+//HCF OF TWO NUMBERS
+
 import java.util.Scanner;
 
 public class day3{
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    int hcf=1;
     int n = sc.nextInt();
-        for(int i=1;i<=n;i++)
-        {
-        for(int j=1;j<=i;j++)
-        {
-        System.out.print(j);
+    int m = sc.nextInt();
+        for(int i=1;i<=n && i<=m;i++){
+            if(n%i==0 && m%i==0){
+            hcf=i;
+            }
         }
-        System.out.println();
-    }
+            System.out.println(hcf);
     }
 }
